@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PhysicsCalculatorController">
+   <children>
+      <Label id="appTitle" alignment="CENTER" contentDisplay="CENTER" layoutY="6.0" prefHeight="32.0" prefWidth="600.0" text="Physics Gravitational and Electrostatic Forces Calculator">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="obj1Field" layoutX="14.0" layoutY="104.0" prefHeight="32.0" prefWidth="558.0" promptText="Object 1: Mass in Kilograms if Gravitational Force, Charge in Coulombs if Electrostatic" />
+      <TextField fx:id="obj2Field" layoutX="14.0" layoutY="143.0" prefHeight="32.0" prefWidth="558.0" promptText="Object 2: Mass in Kilograms if Gravitational Force, Charge in Coulombs if Electrostatic" />
+      <TextField fx:id="distanceField" layoutX="14.0" layoutY="184.0" prefHeight="32.0" prefWidth="558.0" promptText="Distance: In Meters, Between Centers of Object 1 and Object 2" />
+      <ToggleButton fx:id="calcTypeBtn" layoutX="223.0" layoutY="64.0" mnemonicParsing="false" onAction="#calcTypeBtnListener" text="Gravitational Calculator" />
+      <Label layoutX="161.0" layoutY="47.0" text="(Click to switch between the two force calculators)" />
+      <Button fx:id="CalcBtn" layoutX="252.0" layoutY="245.0" mnemonicParsing="false" onAction="#calcBtnListener" text="Calculate Force" />
+      <Label fx:id="answerField" alignment="CENTER" layoutY="317.0" prefHeight="25.0" prefWidth="600.0" text="(Force, in Newtons)" wrapText="true">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
